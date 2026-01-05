@@ -23,9 +23,9 @@ El objetivo es demostrar dominio de JavaScript aplicado a un proyecto real, orga
 ## Repositorio y Hosting
 
 - **Repositorio GitHub:**  
-  *(añadir aquí la URL cuando lo subas)*
+  https://github.com/Israel-180590/luisIsrael_candoLeon_trabajoJAVASCRIPT.git
 
 - **GitHub Pages (Hosting):**  
-  *(añadir aquí la URL cuando lo publiques)*
+https://israel-180590.github.io/luisIsrael_candoLeon_trabajoJAVASCRIPT/
 
 ---
