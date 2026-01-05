@@ -1,8 +1,8 @@
 
 const imagenes = [
-    "/images/logo_2.jpeg",
-    "/images/fondo_1.png",
-    "/images/fondo_2.png"
+    "../images/logo_2.jpeg",
+    "../images/fondo_1.png",
+    "../images/fondo_2.png"
 ];
 
 const contenedor = document.getElementById("galeria");
