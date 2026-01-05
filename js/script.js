@@ -80,27 +80,29 @@ if (form) {
 
 
 
+const producto = document.getElementById("producto");
+const plazo = document.getElementById("plazo");
+const extras = document.querySelectorAll(".extra");
+const total = document.getElementById("total");
+
+
 function calcularPresupuesto() {
-    const producto = Number(document.getElementById("producto").value);
-    const plazo = Number(document.getElementById("plazo").value);
-    const extras = document.querySelectorAll(".extra:checked");
+    let precioBase = Number(producto.value) || 0;
+    let precioExtras = 0;
 
-    let total = producto;
-
-    extras.forEach(extra => total += Number(extra.value));
-
-    if (plazo <= 6) total *= 0.9;
-    if (plazo <= 3) total *= 0.8;
-
-    document.getElementById("total").value = total.toFixed(2) + " €";
-}
-
-if (document.getElementById("producto")) {
-    document.getElementById("producto").addEventListener("change", calcularPresupuesto);
-    document.getElementById("plazo").addEventListener("input", calcularPresupuesto);
-    document.querySelectorAll(".extra").forEach(extra => {
-        extra.addEventListener("change", calcularPresupuesto);
+    extras.forEach(extra => {
+        if (extra.checked) precioExtras += Number(extra.value);
     });
+
+    let precioFinal = precioBase + precioExtras;
+
+    total.value = precioFinal + " €";
 }
+
+
+producto.addEventListener("change", calcularPresupuesto);
+plazo.addEventListener("input", calcularPresupuesto);
+extras.forEach(extra => extra.addEventListener("change", calcularPresupuesto));
+
 
 
