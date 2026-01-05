@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const contenedorNoticias = document.getElementById("contenedor-noticias");
 
     if (contenedorNoticias) {
-        fetch("../data/noticias.json")
+        fetch("data/noticias.json")
             .then(response => response.json())
             .then(noticias => mostrarNoticias(noticias))
             .catch(error => console.error("Error al cargar las noticias:", error));
