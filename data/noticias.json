@@ -1,0 +1,17 @@
+[
+  {
+    "titulo": "Nueva actualización de MainDev",
+    "descripcion": "Hemos lanzado nuevas funciones para mejorar la experiencia del usuario.",
+    "fecha": "2025-01-10"
+  },
+  {
+    "titulo": "Evento anual de desarrolladores",
+    "descripcion": "MainDev estará presente en el evento de tecnología más importante del año.",
+    "fecha": "2025-02-01"
+  },
+  {
+    "titulo": "Mejoras en seguridad",
+    "descripcion": "Implementamos nuevas medidas de seguridad en nuestros servidores.",
+    "fecha": "2025-03-15"
+  }
+]
