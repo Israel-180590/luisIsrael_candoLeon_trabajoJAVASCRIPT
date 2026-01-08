@@ -12,7 +12,7 @@ imagenes.forEach(imgData => {
     img.src = imgData.src;
     img.alt = "Proyecto MainDev";
 
-    // Dimensiones originales (lo que te pide el profesor)
+    
     img.width = imgData.width;
     img.height = imgData.height;
 

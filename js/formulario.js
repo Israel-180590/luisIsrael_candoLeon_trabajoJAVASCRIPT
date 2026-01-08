@@ -40,7 +40,7 @@ function calcularPresupuesto() {
 
     let precioFinal = precioBase + precioExtras;
 
-    // DESCUENTO SEGÚN PLAZO (tramos)
+    
     let meses = Number(plazo.value);
     let descuento = 0;
 
