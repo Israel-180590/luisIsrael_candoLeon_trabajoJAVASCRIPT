@@ -39,7 +39,7 @@
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="galeria.html">Galería</a></li>
-                <li><a href="presupuesto.html">Presupuesto</a></li>
+                <li><a href="presupuesto.html" class="active">Presupuesto</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
 
@@ -97,7 +97,13 @@
                     <div class="div_f">
 
                         <label class="titulo_f" for="plazo">Plazo (meses):</label>
-                        <input type="number" id="plazo" min="1" max="24" value="12">
+                        <select id="plazo">
+                            <option value="0">0–6 meses</option>
+                            <option value="12">7–12 meses</option>
+                            <option value="18">13–18 meses</option>
+                            <option value="24">19–24 meses</option>
+                        </select>
+
 
 
                         <div class="div_extra">
@@ -177,7 +183,7 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 
-    <script src="../js/script.js"></script>
+    <script src="../js/formulario.js"></script>
 
 </body>
 
